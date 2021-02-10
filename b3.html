@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <link rel="shortcut icon" type="image/png" href="./dist/favicon.png" />
+
+    <title>CNotes: B3</title>
+
+    <link rel="stylesheet" href="./dist/reset.css" />
+    <link rel="stylesheet" href="./dist/reveal.css" />
+    <link rel="stylesheet" href="./dist/theme/cnotes.css" id="theme" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link
+      rel="stylesheet"
+      href="./plugin/highlight/monokai.css"
+      id="highlight-theme"
+    />
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <!-- Slide 1 -->
+        <section>
+          <h1>CNotes</h1>
+          <p>Relatório de desenvolvimento</p>
+        </section>
+        <section>
+          <h3>Desenvolvimento</h3>
+          <ul>
+            <li>
+              <div class="inline-flex f-row align-center">
+                Time:
+                <a
+                  href="https://github.com/Lontras-e-Preguicas/"
+                  class="inline-flex f-row align-center"
+                  target="blank"
+                >
+                  <div class="team_picture"></div>
+                  Lontras e Preguiças
+                </a>
+              </div>
+            </li>
+            <li>
+              App:
+              <a
+                href="https://github.com/Lontras-e-Preguicas/cnotes-app/"
+                target="blank"
+                >cnotes-app</a
+              >
+            </li>
+            <li>
+              Server:
+              <a
+                href="https://github.com/Lontras-e-Preguicas/cnotes-server/"
+                target="blank"
+                >cnotes-server</a
+              >
+            </li>
+          </ul>
+        </section>
+        <section data-markdown>
+          <textarea data-template>
+						### Servidor
+
+						API rest baseada em `django`, TDD e CI.
+					</textarea
+          >
+        </section>
+        <section data-markdown>
+          <textarea data-template>
+						### App
+
+						Aplicação mobile multiplataforma desenvolvida em `react-native`.
+					</textarea
+          >
+        </section>
+        <section>
+          <h2>Demonstração</h2>
+        </section>
+      </div>
+    </div>
+
+    <script src="./dist/reveal.js"></script>
+    <script src="./plugin/notes/notes.js"></script>
+    <script src="./plugin/markdown/markdown.js"></script>
+    <script src="./plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
+</html>
